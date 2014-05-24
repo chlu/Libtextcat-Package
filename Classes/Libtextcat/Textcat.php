@@ -104,8 +104,8 @@ class Textcat {
 	protected function readFingerprint($category) {
 		$fingerprint = array();
 
-		if (file_exists(__DIR__ . '/../Resources/Private/' . $category . '.lm')) {
-			$filename = __DIR__ . '/../Resources/Private/' . $category . '.lm';
+		if (file_exists(__DIR__ . '/../../Resources/Private/' . $category . '.lm')) {
+			$filename = __DIR__ . '/../../Resources/Private/' . $category . '.lm';
 		} else {
 			$filename = 'resource://Libtextcat/Private/' . $category . '.lm';
 		}
