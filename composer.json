@@ -10,10 +10,10 @@
     "keywords": ["text", "language", "categorie"],
     "homepage": "https://github.com/kaystrobach/Libtextcat-Package/",
     "autoload":{
-		  "psr-0":{
-			  "Libtextcat":"Classes"
-		  }
-	  }
+        "psr-0":{
+            "Libtextcat":"Classes"
+         }
+    },
     "suggest": {
     },
     "replace": {
