@@ -1,5 +1,5 @@
 <?php
-namespace Libtextcat;
+namespace Chlu\Libtextcat;
 
 /*                                                                        *
  * This script belongs to the FLOW3 package "Libtextcat".                 *
@@ -11,7 +11,7 @@ namespace Libtextcat;
  * The TYPO3 project - inspiring people to share!                         *
  *                                                                        */
 
-use \TYPO3\FLOW3\Package\Package as BasePackage;
+use \TYPO3\Flow\Package\Package as BasePackage;
 
 /**
  * The Libtextcat Package

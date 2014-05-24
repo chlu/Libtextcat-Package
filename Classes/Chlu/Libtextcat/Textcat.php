@@ -1,5 +1,5 @@
 <?php
-namespace Libtextcat;
+namespace Chlu\Libtextcat;
 
 /*                                                                        *
  * This script belongs to the FLOW3 package "Libtextcat".                 *
@@ -11,12 +11,12 @@ namespace Libtextcat;
  * The TYPO3 project - inspiring people to share!                         *
  *                                                                        */
 
-use TYPO3\FLOW3\Annotations as FLOW3;
+use TYPO3\Flow\Annotations as Flow;
 
 /**
  * Textcat text categorization
  *
- * @FLOW3\Scope("singleton")
+ * @Flow\Scope("singleton")
  */
 class Textcat {
 
@@ -104,10 +104,10 @@ class Textcat {
 	protected function readFingerprint($category) {
 		$fingerprint = array();
 
-		if (file_exists(__DIR__ . '/../Resources/Private/' . $category . '.lm')) {
-			$filename = __DIR__ . '/../Resources/Private/' . $category . '.lm';
+		if (file_exists(__DIR__ . '/../../Resources/Private/' . $category . '.lm')) {
+			$filename = __DIR__ . '/../../Resources/Private/' . $category . '.lm';
 		} else {
-			$filename = 'resource://Libtextcat/Private/' . $category . '.lm';
+			$filename = 'resource://chlu.Libtextcat/Private/' . $category . '.lm';
 		}
 		$fp = fopen($filename, 'r');
 		for ($rank = 1; ($row = fgets($fp)) !== FALSE; $rank++) {
@@ -150,6 +150,7 @@ class Textcat {
 	 * - sort them alphabetically, recording their relative rank
 	 *
 	 * @param string $buffer
+	 * @param $maxngrams
 	 * @return array|false Fingerprint as array indexed by ngrams with score
 	 */
 	static public function create($buffer, $maxngrams) {
