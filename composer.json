@@ -1,5 +1,5 @@
 {
-    "name": "kaystrobach/Libtextcat",
+    "name": "Libtextcat",
     "description": "TYPO3 Flow Package for PHP libtextcat support (language categorization)",
     "authors": [
         { "name": "Christopher Hlubek" },
