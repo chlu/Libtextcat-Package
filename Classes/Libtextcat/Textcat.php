@@ -107,7 +107,7 @@ class Textcat {
 		if (file_exists(__DIR__ . '/../../Resources/Private/' . $category . '.lm')) {
 			$filename = __DIR__ . '/../../Resources/Private/' . $category . '.lm';
 		} else {
-			$filename = 'resource://Libtextcat/Private/' . $category . '.lm';
+			$filename = 'kaystrobach/resource://Libtextcat/Private/' . $category . '.lm';
 		}
 		$fp = fopen($filename, 'r');
 		for ($rank = 1; ($row = fgets($fp)) !== FALSE; $rank++) {
