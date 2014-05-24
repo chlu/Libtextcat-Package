@@ -16,7 +16,7 @@ use TYPO3\Flow\Annotations as FLOW3;
 /**
  * Textcat text categorization
  *
- * @FLOW3\Scope("singleton")
+ * @Flow\Scope("singleton")
  */
 class Textcat {
 
