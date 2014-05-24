@@ -1,5 +1,5 @@
 {
-    "name": "Libtextcat",
+    "name": "chlu/Libtextcat",
     "description": "TYPO3 Flow Package for PHP libtextcat support (language categorization)",
     "authors": [
         { "name": "Christopher Hlubek" },
@@ -11,12 +11,7 @@
     "homepage": "https://github.com/kaystrobach/Libtextcat-Package/",
     "autoload":{
         "psr-0":{
-            "Libtextcat":"Classes"
+            "Chlu\\Libtextcat":"Classes"
          }
-    },
-    "suggest": {
-    },
-    "replace": {
-        "libtextcat": "self.version"
     }
 }

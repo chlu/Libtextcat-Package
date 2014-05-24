@@ -1,5 +1,5 @@
 <?php
-namespace Libtextcat;
+namespace Chlu\Libtextcat;
 
 /*                                                                        *
  * This script belongs to the FLOW3 package "Libtextcat".                 *
