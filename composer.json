@@ -17,6 +17,6 @@
     "suggest": {
     },
     "replace": {
-        "chlu/libtextcat": "self.version",
+        "chlu/libtextcat": "self.version"
     }
 }
